@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quemcriou - Página Inicial</title>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,100,200,300,600,700,800,900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="aalborg_theme/css/boilerplate.css" />
+  <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link href="http://www.quemcriou.com.br/oficial/_graphics/favicon.svg" type="image/svg+xml" sizes="16x16 32x32 48x48 64x64 128x128" rel="icon">
+  <link href="http://www.quemcriou.com.br/oficial/_graphics/favicon-16.png" type="image/png" sizes="16x16" rel="icon">
+  <link href="http://www.quemcriou.com.br/oficial/_graphics/favicon-32.png" type="image/png" sizes="32x32" rel="icon">
+  <link href="http://www.quemcriou.com.br/oficial/_graphics/favicon-64.png" type="image/png" sizes="64x64" rel="icon">
+  <link href="http://www.quemcriou.com.br/oficial/_graphics/favicon-128.png" type="image/png" sizes="128x128" rel="icon">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  } );
+  </script>
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+  html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+  .ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable({
+      placeholder: "ui-state-highlight"
+    });
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+</head>
+<body>
+<div>
+    <img src="h1.png" style="padding-left: 25px; padding-right: 25px;">
+    <input id="tags" style="background-image: url('aalborg_theme/graphics/icones/search.png'); background-repeat: no-repeat; padding-left: 25px;">
+    <img src="aalborg_theme/graphics/icones/partners_p.png" style="	width: 35px;
+	height: 35px;">
+    <img src="aalborg_theme/graphics/icones/menu.png" style="	width: 35px;
+	height: 35px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 5px;">
+</div>
+<div id="tabs" style="width:1080px; margin:auto; margin-left:0px; float: left;">
+  <ul>
+    <li><a href="#tabs-1">Notícias</a></li>
+    <li><a href="#tabs-2">Feed</a></li>
+    <li><a href="#tabs-3">Área de Trabalho</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Essa será a página com as notícias, contendo os links para os sites.</p>
+    <P>TESTANDO O REDIMENSIONAMENTO DA TAB: Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</P>
+  </div>
+  <div id="tabs-2">
+    <p>Essa será a página com o feed da comunidade, com as atividades recentes dos seus contatos.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Essa será a página onde serão apresentados os arquivos que eu submeti.</p>
+    <p>TESTANDO O REDIMENSIONAMENTO DA TAB: Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>  
+    
+  </div>
+</div>
+ 
+ <ul id="sortable" style="float: right; width:250px; margin:auto; margin-top:0px;">
+  <li class="ui-state-default">Meus Projetos</li>
+  <li class="ui-state-default">Meus Contatos</li>
+  <li class="ui-state-default">Projetos que Sigo</li>
+  <li class="ui-state-default">Destaques</li>
+  <li class="ui-state-default">Top 5</li>
+</ul>
+    
+</body>
+</html>
